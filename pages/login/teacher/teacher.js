@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    teacherId: '',
+    password: ''
   },
 
   /**
@@ -62,5 +63,36 @@ Page({
    */
   onShareAppMessage() {
 
+  },
+
+  onTeacherIdInput(e) {
+    this.setData({ teacherId: e.detail.value })
+  },
+
+  onPasswordInput(e) {
+    this.setData({ password: e.detail.value })
+  },
+
+  onLogin() {
+    if (!this.data.teacherId || !this.data.password) {
+      wx.showToast({
+        title: '请填写完整信息',
+        icon: 'none'
+      })
+      return
+    }
+
+    wx.showLoading({ title: '登录中...' })
+
+    // 模拟登录
+    setTimeout(() => {
+      wx.hideLoading()
+      wx.setStorageSync('userInfo', {
+        nickName: '李老师',
+        role: 'teacher',
+        teacherId: this.data.teacherId
+      })
+      wx.navigateBack({ delta: 2 }) // 返回个人中心页面
+    }, 1500)
   }
 })

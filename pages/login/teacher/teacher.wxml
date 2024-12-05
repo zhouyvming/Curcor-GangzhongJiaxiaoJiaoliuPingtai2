@@ -1,2 +1,30 @@
 <!--pages/login/teacher/teacher.wxml-->
-<text>pages/login/teacher/teacher.wxml</text>
+<view class="container">
+  <view class="header">
+    <text class="title">教师登录</text>
+  </view>
+
+  <view class="form">
+    <view class="form-item">
+      <text class="label">工号</text>
+      <input 
+        type="text" 
+        placeholder="请输入工号" 
+        value="{{teacherId}}"
+        bindinput="onTeacherIdInput"
+      />
+    </view>
+
+    <view class="form-item">
+      <text class="label">密码</text>
+      <input 
+        type="password" 
+        placeholder="请输入密码" 
+        value="{{password}}"
+        bindinput="onPasswordInput"
+      />
+    </view>
+
+    <button class="login-btn" bindtap="onLogin">登录</button>
+  </view>
+</view>

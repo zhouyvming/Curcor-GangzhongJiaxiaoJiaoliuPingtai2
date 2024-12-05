@@ -5,6 +5,7 @@
     "pages/class/class",
     "pages/notice/notice",
     "pages/profile/profile",
+    "pages/login/index/index",
     "pages/login/parent/parent",
     "pages/login/teacher/teacher",
     "pages/login/student/student"

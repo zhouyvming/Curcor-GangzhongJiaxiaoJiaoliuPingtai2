@@ -1,0 +1,37 @@
+<view class="container">
+  <view class="header">
+    <text class="title">请选择您的身份</text>
+  </view>
+
+  <view class="role-group">
+    <button class="role-btn {{selectedRole === 'teacher' ? 'selected' : ''}}" 
+            bindtap="selectRole" 
+            data-role="teacher">
+      我是老师
+    </button>
+    <button class="role-btn {{selectedRole === 'parent' ? 'selected' : ''}}" 
+            bindtap="selectRole" 
+            data-role="parent">
+      我是家长
+    </button>
+    <button class="role-btn {{selectedRole === 'student' ? 'selected' : ''}}" 
+            bindtap="selectRole" 
+            data-role="student">
+      我是学生
+    </button>
+  </view>
+
+  <view class="form">
+    <input class="input-item" 
+           placeholder="请输入用户名" 
+           value="{{username}}"
+           bindinput="onUsernameInput"/>
+    <input class="input-item" 
+           placeholder="请输入密码" 
+           password 
+           value="{{password}}"
+           bindinput="onPasswordInput"/>
+  </view>
+
+  <button class="login-btn" bindtap="login">登录</button>
+</view> 

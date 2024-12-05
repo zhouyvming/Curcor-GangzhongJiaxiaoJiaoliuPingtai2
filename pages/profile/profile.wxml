@@ -1,43 +1,80 @@
 <!--pages/profile/profile.wxml-->
 <view class="container">
-  <view class="login-section">
-    <view class="login-title">选择登录身份</view>
-    <view class="login-form">
-      <view class="login-buttons">
-        <button 
-          wx:for="{{loginButtons}}" 
-          wx:key="type"
-          class="login-btn {{selectedType === item.type ? 'selected' : ''}}"
-          bindtap="onTypeSelect"
-          data-type="{{item.type}}">
-          {{item.text}}
-        </button>
-      </view>
-      <view class="form-item">
-        <input 
-          type="text" 
-          placeholder="用户名/学号/手机号"
-          value="{{account}}"
-          bindinput="onAccountInput"
-        />
-      </view>
-      <view class="form-item">
-        <input 
-          type="password" 
-          placeholder="密码"
-          value="{{password}}"
-          bindinput="onPasswordInput"
-        />
-      </view>
-      <button class="submit-btn" bindtap="onLogin">登录</button>
+  <!-- 用户信息 -->
+  <view class="profile-header">
+    <view class="profile-content">
+      <image class="avatar" src="https://mmbiz.qpic.cn/mmbiz/icTdbqWNOwNRna42FI242Lcia07jQodd2FJGIYQfG0LAJGFxM4FbnQP6yfMxBgJ0F3YRqJCJ1aPAK2dQagdusBZg/0" mode="aspectFill"></image>
+      <text class="login-text" bindtap="goToLogin">登录</text>
     </view>
   </view>
-  <view class="login-options">
-    <view class="option-item">
-      <checkbox value="{{rememberPassword}}" bindtap="onRememberPasswordChange">记住密码</checkbox>
+
+  <!-- 数据统计 -->
+  <view class="stats-section">
+    <view class="stat-item">
+      <text class="stat-num">{{stats.posts || 0}}</text>
+      <text class="stat-label">发布</text>
     </view>
-    <view class="option-item">
-      <checkbox value="{{autoLogin}}" bindtap="onAutoLoginChange">自动登录</checkbox>
+    <view class="stat-item">
+      <text class="stat-num">{{stats.collects || 0}}</text>
+      <text class="stat-label">收藏</text>
+    </view>
+    <view class="stat-item">
+      <text class="stat-num">{{stats.likes || 0}}</text>
+      <text class="stat-label">获赞</text>
+    </view>
+  </view>
+
+  <!-- 功能菜单 -->
+  <view class="menu-list">
+    <view class="menu-group">
+      <view class="menu-item">
+        <view class="menu-left">
+          <text class="iconfont icon-profile"></text>
+          <text>个人资料</text>
+        </view>
+        <text class="arrow"></text>
+      </view>
+      <view class="menu-item">
+        <view class="menu-left">
+          <text class="iconfont icon-class"></text>
+          <text>我的班级</text>
+        </view>
+        <text class="arrow"></text>
+      </view>
+    </view>
+
+    <view class="menu-group">
+      <!-- <view class="menu-item">
+        <view class="menu-left">
+          <text class="iconfont icon-answer"></text>
+          <text>我的问答</text>
+        </view>
+        <text class="arrow"></text>
+      </view> -->
+      <view class="menu-item">
+        <view class="menu-left">
+          <text class="iconfont icon-post"></text>
+          <text>我的发布</text>
+        </view>
+        <text class="arrow"></text>
+      </view>
+      <!-- <view class="menu-item">
+        <view class="menu-left">
+          <text class="iconfont icon-star"></text>
+          <text>我的收藏</text>
+        </view>
+        <text class="arrow"></text>
+      </view> -->
+    </view>
+
+    <view class="menu-group">
+      <view class="menu-item">
+        <view class="menu-left">
+          <text class="iconfont icon-settings"></text>
+          <text>设置</text>
+        </view>
+        <text class="arrow"></text>
+      </view>
     </view>
   </view>
 </view>
