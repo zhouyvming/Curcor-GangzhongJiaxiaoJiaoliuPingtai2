@@ -26,15 +26,58 @@
   height: 70rpx;
   line-height: 70rpx;
   font-size: 28rpx;
-  color: #fff;
   border-radius: 35rpx;
   padding: 0;
   margin: 0;
   font-weight: normal;
+  transition: all 0.3s ease;
+}
+
+/* 未选中状态 - 浅色背景 */
+.login-btn {
+  background-color: #fff !important;
+  border: none;
 }
 
 .login-btn::after {
   border: none;
+}
+
+.login-btn:nth-child(1) {
+  color: #4086F4;
+  background-color: rgba(64, 134, 244, 0.1) !important;
+}
+
+.login-btn:nth-child(2) {
+  color: #FF5B8F;
+  background-color: rgba(255, 91, 143, 0.1) !important;
+}
+
+.login-btn:nth-child(3) {
+  color: #4CD964;
+  background-color: rgba(76, 217, 100, 0.1) !important;
+}
+
+/* 选中状态 - 深色背景 */
+.login-btn.selected:nth-child(1) {
+  color: #fff;
+  background-color: #4086F4 !important;
+}
+
+.login-btn.selected:nth-child(2) {
+  color: #fff;
+  background-color: #FF5B8F !important;
+}
+
+.login-btn.selected:nth-child(3) {
+  color: #fff;
+  background-color: #4CD964 !important;
+}
+
+/* 点击动画效果 */
+.login-btn:active {
+  transform: scale(0.95);
+  opacity: 0.8;
 }
 
 .form-item {
