@@ -16,29 +16,53 @@ Page({
       }
     ],
     gridList: [
-      { 
-        id: 1, 
-        name: '作业', 
-        icon: 'https://via.placeholder.com/80/FF9800/ffffff?text=作业', 
-        type: 'homework' 
+      {
+        id: 1,
+        type: 'homework',
+        name: '作业',
+        icon: 'https://via.placeholder.com/80/FF9800/ffffff?text=作业'
       },
-      { 
-        id: 2, 
-        name: '成绩', 
-        icon: 'https://via.placeholder.com/80/4CAF50/ffffff?text=成绩', 
-        type: 'score' 
+      {
+        id: 2,
+        type: 'score',
+        name: '成绩',
+        icon: 'https://via.placeholder.com/80/4CAF50/ffffff?text=成绩'
       },
-      { 
-        id: 3, 
-        name: '课表', 
-        icon: 'https://via.placeholder.com/80/2196F3/ffffff?text=课表', 
-        type: 'schedule' 
+      {
+        id: 3,
+        type: 'schedule',
+        name: '课表',
+        icon: 'https://via.placeholder.com/80/2196F3/ffffff?text=课表'
       },
-      { 
-        id: 4, 
-        name: '请假', 
-        icon: 'https://via.placeholder.com/80/9C27B0/ffffff?text=请假', 
-        type: 'leave' 
+      {
+        id: 4,
+        type: 'leave',
+        name: '请假',
+        icon: 'https://via.placeholder.com/80/9C27B0/ffffff?text=请假'
+      },
+      {
+        id: 5,
+        type: 'club',
+        name: '社团活动',
+        icon: 'https://via.placeholder.com/80/FF5722/ffffff?text=社团'
+      },
+      {
+        id: 6,
+        type: 'repair',
+        name: '宿舍报修',
+        icon: 'https://via.placeholder.com/80/795548/ffffff?text=报修'
+      },
+      {
+        id: 7,
+        type: 'rules',
+        name: '校规校纪',
+        icon: 'https://via.placeholder.com/80/607D8B/ffffff?text=校规'
+      },
+      {
+        id: 8,
+        type: 'feedback',
+        name: '意见反馈',
+        icon: 'https://via.placeholder.com/80/009688/ffffff?text=反馈'
       }
     ],
     newsList: [

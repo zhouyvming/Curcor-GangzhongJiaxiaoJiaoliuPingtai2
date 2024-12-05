@@ -32,4 +32,12 @@
       <button class="submit-btn" bindtap="onLogin">登录</button>
     </view>
   </view>
+  <view class="login-options">
+    <view class="option-item">
+      <checkbox value="{{rememberPassword}}" bindtap="onRememberPasswordChange">记住密码</checkbox>
+    </view>
+    <view class="option-item">
+      <checkbox value="{{autoLogin}}" bindtap="onAutoLoginChange">自动登录</checkbox>
+    </view>
+  </view>
 </view>
