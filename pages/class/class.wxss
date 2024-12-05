@@ -1,0 +1,195 @@
+/* pages/class/class.wxss */
+.container {
+  padding: 30rpx;
+  background: #F5F5F5;
+}
+
+/* 统一的卡片样式 */
+.section {
+  width: 690rpx;  /* 750-30*2 考虑容器padding */
+  height: 300rpx;  /* 统一高度 */
+  background: #FFFFFF;
+  border-radius: 12rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+  box-sizing: border-box;
+}
+
+.section-title {
+  height: 44rpx;
+  line-height: 44rpx;
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 30rpx;
+  padding-left: 20rpx;
+  border-left: 8rpx solid #4086F4;
+}
+
+/* 值周班干 */
+.duty-content {
+  height: 196rpx;  /* 300-44-30-30 */
+  padding: 20rpx;
+  background: #F8F8F8;
+  border-radius: 8rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.duty-info {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+}
+
+.duty-info .week,
+.duty-info .class {
+  font-size: 28rpx;
+  color: #666;
+  margin-right: 40rpx;
+}
+
+.duty-members {
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  gap: 40rpx;
+}
+
+.duty-members text {
+  font-size: 28rpx;
+  color: #4086F4;
+}
+
+/* 作业通知 */
+.homework-list {
+  height: 196rpx;
+  overflow-y: auto;
+}
+
+.homework-item {
+  height: 98rpx;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #EEEEEE;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.homework-item:last-child {
+  border-bottom: none;
+}
+
+.homework-item .subject {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+}
+
+.homework-item .content {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.homework-item .deadline {
+  font-size: 24rpx;
+  color: #FF5B5B;
+}
+
+/* 课程查询 */
+.course-list {
+  height: 196rpx;
+  overflow-y: auto;
+}
+
+.course-item {
+  height: 98rpx;
+  padding: 20rpx;
+  border-bottom: 1rpx solid #EEEEEE;
+  display: flex;
+  align-items: center;
+}
+
+.course-item:last-child {
+  border-bottom: none;
+}
+
+.course-item .time {
+  width: 240rpx;
+  font-size: 26rpx;
+  color: #666;
+}
+
+.course-info {
+  flex: 1;
+  height: 98rpx;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.course-info .subject {
+  font-size: 30rpx;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 8rpx;
+}
+
+.course-info .teacher,
+.course-info .room {
+  font-size: 26rpx;
+  color: #666;
+}
+
+/* 班级成员 */
+.member-section {
+  height: 460rpx;  /* 这个模块需要更高一些 */
+}
+
+.member-group {
+  margin-bottom: 30rpx;
+}
+
+.group-title {
+  height: 40rpx;
+  line-height: 40rpx;
+  font-size: 28rpx;
+  color: #666;
+  margin-bottom: 20rpx;
+}
+
+.member-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20rpx;
+}
+
+.member-item {
+  width: 180rpx;
+  height: 100rpx;
+  background: #F8F8F8;
+  border-radius: 8rpx;
+  padding: 15rpx 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.member-item .name {
+  font-size: 28rpx;
+  color: #333;
+  margin-bottom: 8rpx;
+}
+
+.member-item .role {
+  font-size: 24rpx;
+  color: #666;
+}
+
+/* 处理滚动条样式 */
+::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  color: transparent;
+}

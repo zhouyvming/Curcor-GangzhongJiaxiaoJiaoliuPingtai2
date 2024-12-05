@@ -1,0 +1,25 @@
+微信小程序项目结构：
+
+├── pages/
+│   ├── index/                 // 首页
+│   │   ├── index.js
+│   │   ├── index.wxml
+│   │   ├── index.wxss
+│   │   └── index.json
+│   ├── forum/                 // 论坛
+│   ├── class/                 // 班级
+│   ├── notice/               // 通知
+│   ├── profile/              // 我的
+│   ├── login/                // 登录相关页面
+│   │   ├── parent/          // 家长登录
+│   │   ├── teacher/         // 教师登录
+│   │   └── student/         // 学生登录
+├── components/               // 公共组件
+│   ├── swiper/              // 轮播图组件
+│   └── post-item/           // 论坛帖子组件
+├── utils/                    // 工具函数
+├── images/                   // 图片资源
+│   ├── banner/              // 轮播图
+│   ├── grid/               // 功能图标
+│   └── news/               // 新闻图片
+└── app.json                 // 全局配置 

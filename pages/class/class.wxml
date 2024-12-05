@@ -1,0 +1,66 @@
+<!--pages/class/class.wxml-->
+<view class="container">
+  <!-- 值周班干 -->
+  <view class="section duty-section">
+    <view class="section-title">值周班干</view>
+    <view class="duty-content">
+      <view class="duty-info">
+        <text class="week">{{dutyInfo.week}}</text>
+        <text class="class">{{dutyInfo.dutyClass}}</text>
+      </view>
+      <view class="duty-members">
+        <text wx:for="{{dutyInfo.members}}" wx:key="*this">{{item}}</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- 作业通知 -->
+  <view class="section homework-section">
+    <view class="section-title">作业通知</view>
+    <view class="homework-list">
+      <view class="homework-item" wx:for="{{homework}}" wx:key="subject">
+        <view class="subject">{{item.subject}}</view>
+        <view class="content">{{item.content}}</view>
+        <view class="deadline">截止时间：{{item.deadline}}</view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 课程查询 -->
+  <view class="section course-section">
+    <view class="section-title">课程查询</view>
+    <view class="course-list">
+      <view class="course-item" wx:for="{{courses}}" wx:key="time">
+        <view class="time">{{item.time}}</view>
+        <view class="course-info">
+          <text class="subject">{{item.subject}}</text>
+          <text class="teacher">{{item.teacher}}</text>
+          <text class="room">{{item.room}}教室</text>
+        </view>
+      </view>
+    </view>
+  </view>
+
+  <!-- 班级成员 -->
+  <view class="section member-section">
+    <view class="section-title">班级成员</view>
+    <view class="member-group">
+      <view class="group-title">教师团队</view>
+      <view class="member-list">
+        <view class="member-item" wx:for="{{classMembers.teachers}}" wx:key="name">
+          <text class="name">{{item.name}}</text>
+          <text class="role">{{item.role}}</text>
+        </view>
+      </view>
+    </view>
+    <view class="member-group">
+      <view class="group-title">班干部</view>
+      <view class="member-list">
+        <view class="member-item" wx:for="{{classMembers.students}}" wx:key="name">
+          <text class="name">{{item.name}}</text>
+          <text class="role">{{item.role}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

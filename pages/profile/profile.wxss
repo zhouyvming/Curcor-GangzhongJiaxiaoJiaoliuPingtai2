@@ -1,0 +1,147 @@
+/* pages/profile/profile.wxss */
+.container {
+  min-height: 100vh;
+  background: #fff;
+}
+
+.login-section {
+  padding: 40rpx;
+}
+
+.login-title {
+  font-size: 32rpx;
+  text-align: center;
+  margin-bottom: 40rpx;
+}
+
+.login-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20rpx;
+  margin-bottom: 40rpx;
+}
+
+.login-btn {
+  width: 180rpx !important;
+  height: 70rpx;
+  line-height: 70rpx;
+  font-size: 28rpx;
+  color: #fff;
+  border-radius: 35rpx;
+  padding: 0;
+  margin: 0;
+  font-weight: normal;
+}
+
+.login-btn::after {
+  border: none;
+}
+
+.form-item {
+  margin-bottom: 20rpx;
+}
+
+input {
+  width: 100%;
+  height: 80rpx;
+  background: #F5F5F5;
+  border-radius: 10rpx;
+  font-size: 28rpx;
+  padding: 0 30rpx;
+  box-sizing: border-box;
+}
+
+.submit-btn {
+  width: 100% !important;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #4086F4;
+  color: #fff;
+  font-size: 32rpx;
+  border-radius: 10rpx;
+  margin-top: 40rpx;
+}
+
+.submit-btn::after {
+  border: none;
+}
+
+.user-info {
+  background: #fff;
+  padding: 40rpx;
+  display: flex;
+  align-items: center;
+}
+
+.avatar {
+  width: 120rpx;
+  height: 120rpx;
+  border-radius: 50%;
+  margin-right: 30rpx;
+}
+
+.user-detail {
+  flex: 1;
+}
+
+.nickname {
+  font-size: 36rpx;
+  font-weight: bold;
+  margin-bottom: 10rpx;
+  display: block;
+}
+
+.role {
+  font-size: 28rpx;
+  color: #666;
+}
+
+.menu-list {
+  margin-top: 20rpx;
+  background: #fff;
+}
+
+.menu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30rpx 40rpx;
+  border-bottom: 1rpx solid #eee;
+}
+
+.menu-content {
+  display: flex;
+  align-items: center;
+}
+
+.menu-icon {
+  font-size: 40rpx;
+  margin-right: 20rpx;
+  color: #1AAD19;
+}
+
+.menu-text {
+  font-size: 32rpx;
+}
+
+.menu-right {
+  display: flex;
+  align-items: center;
+}
+
+.badge {
+  background: #ff6b6b;
+  color: #fff;
+  font-size: 24rpx;
+  padding: 2rpx 12rpx;
+  border-radius: 20rpx;
+  margin-right: 20rpx;
+}
+
+.arrow {
+  width: 16rpx;
+  height: 16rpx;
+  border-top: 4rpx solid #999;
+  border-right: 4rpx solid #999;
+  transform: rotate(45deg);
+}

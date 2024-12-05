@@ -1,10 +1,87 @@
 /**index.wxss**/
 page {
   height: 100vh;
-  display: flex;
-  flex-direction: column;
+  overflow-y: hidden;
 }
 .scrollarea {
-  flex: 1;
   overflow-y: hidden;
+}
+
+.container {
+  padding: 0;
+  background: #f6f6f6;
+}
+
+.banner {
+  width: 100%;
+  height: 360rpx;
+}
+
+.banner image {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20rpx;
+  padding: 30rpx;
+  background: #fff;
+}
+
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.grid-item image {
+  width: 80rpx;
+  height: 80rpx;
+  margin-bottom: 10rpx;
+}
+
+.news-section {
+  margin-top: 20rpx;
+  background: #fff;
+  padding: 20rpx;
+}
+
+.section-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 20rpx;
+}
+
+.news-item {
+  display: flex;
+  padding: 20rpx 0;
+  border-bottom: 1rpx solid #eee;
+}
+
+.news-item image {
+  width: 200rpx;
+  height: 140rpx;
+  border-radius: 8rpx;
+}
+
+.news-info {
+  flex: 1;
+  margin-left: 20rpx;
+}
+
+.news-title {
+  font-size: 28rpx;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+
+.news-date {
+  font-size: 24rpx;
+  color: #999;
+  margin-top: 10rpx;
 }

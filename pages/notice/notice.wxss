@@ -1,0 +1,57 @@
+/* pages/notice/notice.wxss */
+.container {
+  padding: 20rpx;
+  background: #f6f6f6;
+}
+
+.notice-list {
+  width: 100%;
+}
+
+.notice-item {
+  background: #fff;
+  padding: 30rpx;
+  margin-bottom: 20rpx;
+  border-radius: 8rpx;
+  position: relative;
+}
+
+.notice-item.important {
+  border-left: 8rpx solid #ff6b6b;
+}
+
+.notice-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20rpx;
+}
+
+.notice-type {
+  font-size: 24rpx;
+  color: #1AAD19;
+  background: rgba(26, 173, 25, 0.1);
+  padding: 4rpx 12rpx;
+  border-radius: 4rpx;
+}
+
+.notice-date {
+  font-size: 24rpx;
+  color: #999;
+}
+
+.notice-title {
+  font-size: 32rpx;
+  font-weight: bold;
+  margin-bottom: 16rpx;
+}
+
+.notice-content {
+  font-size: 28rpx;
+  color: #666;
+  line-height: 1.6;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}

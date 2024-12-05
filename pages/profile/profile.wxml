@@ -1,0 +1,36 @@
+<!--pages/profile/profile.wxml-->
+<view class="container">
+  <view class="login-section">
+    <view class="login-title">选择登录身份</view>
+    <view class="login-form">
+      <view class="login-buttons">
+        <button 
+          wx:for="{{loginButtons}}" 
+          wx:key="type"
+          class="login-btn {{selectedType === item.type ? 'selected' : ''}}"
+          style="background-color: {{item.color}}"
+          bindtap="onTypeSelect"
+          data-type="{{item.type}}">
+          {{item.text}}
+        </button>
+      </view>
+      <view class="form-item">
+        <input 
+          type="text" 
+          placeholder="请输入用户名"
+          value="{{account}}"
+          bindinput="onAccountInput"
+        />
+      </view>
+      <view class="form-item">
+        <input 
+          type="password" 
+          placeholder="请输入密码"
+          value="{{password}}"
+          bindinput="onPasswordInput"
+        />
+      </view>
+      <button class="submit-btn" bindtap="onLogin">登录</button>
+    </view>
+  </view>
+</view>

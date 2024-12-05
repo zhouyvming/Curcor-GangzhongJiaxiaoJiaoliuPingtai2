@@ -1,0 +1,18 @@
+<!--pages/forum/forum.wxml-->
+<view class="container">
+  <view class="post-list">
+    <view class="post-item" wx:for="{{postList}}" wx:key="id" bindtap="onPostTap" data-id="{{item.id}}">
+      <view class="post-title">{{item.title}}</view>
+      <view class="post-content">{{item.content}}</view>
+      <view class="post-info">
+        <text class="post-author">{{item.author}}</text>
+        <text class="post-time">{{item.time}}</text>
+        <text class="post-comments">评论 {{item.comments}}</text>
+      </view>
+    </view>
+  </view>
+  
+  <view class="new-post-btn" bindtap="onNewPost">
+    <text>发帖</text>
+  </view>
+</view>

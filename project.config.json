@@ -1,26 +1,46 @@
 {
-  "appid": "wx03eb6094e092a54c",
-  "compileType": "miniprogram",
-  "libVersion": "3.7.0",
+  "description": "项目配置文件",
   "packOptions": {
     "ignore": [],
     "include": []
   },
+  "miniprogramRoot": "",
+  "compileType": "miniprogram",
+  "projectname": "港中家校共育",
   "setting": {
-    "coverView": true,
-    "es6": true,
-    "postcss": true,
-    "minified": true,
-    "enhance": true,
-    "showShadowRootInWxmlPanel": true,
-    "packNpmRelationList": [],
+    "useCompilerPlugins": [
+      "typescript"
+    ],
     "babelSetting": {
       "ignore": [],
       "disablePlugins": [],
       "outputPath": ""
-    }
+    },
+    "es6": true,
+    "enhance": true,
+    "packNpmManually": false,
+    "minified": true,
+    "uglifyFileName": false,
+    "useMultiFrameRuntime": true,
+    "showShadowRootInWxmlPanel": true,
+    "packNpmRelationList": [],
+    "minifyWXSS": true,
+    "disableUseStrict": false,
+    "minifyWXML": true,
+    "useStaticServer": true,
+    "checkInvalidKey": true,
+    "uploadWithSourceMap": true,
+    "compileHotReLoad": false,
+    "useIsolateContext": false,
+    "useApiHook": true,
+    "useApiHostProcess": true
   },
+  "simulatorType": "wechat",
+  "simulatorPluginLibVersion": {},
   "condition": {},
+  "srcMiniprogramRoot": "",
+  "appid": "wx03eb6094e092a54c",
+  "libVersion": "3.0.0",
   "editorSetting": {
     "tabIndent": "insertSpaces",
     "tabSize": 2

@@ -1,0 +1,28 @@
+<view class="container">
+  <view class="notice-header">
+    <view class="notice-title">{{notice.title}}</view>
+    <view class="notice-info">
+      <text class="publisher">发布人：{{notice.publisher}}</text>
+      <text class="date">{{notice.date}}</text>
+    </view>
+    <text class="notice-type">{{notice.type}}</text>
+  </view>
+
+  <view class="notice-content">
+    <text>{{notice.content}}</text>
+  </view>
+
+  <view class="attachments" wx:if="{{notice.attachments.length > 0}}">
+    <view class="section-title">附件</view>
+    <view class="attachment-list">
+      <view class="attachment-item" 
+            wx:for="{{notice.attachments}}" 
+            wx:key="name"
+            bindtap="downloadFile"
+            data-url="{{item.url}}">
+        <text class="file-name">{{item.name}}</text>
+        <text class="download-icon">下载</text>
+      </view>
+    </view>
+  </view>
+</view> 

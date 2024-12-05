@@ -1,7 +1,38 @@
 {
-  "description": "项目私有配置文件。此文件中的内容将覆盖 project.config.json 中的相同字段。项目的改动优先同步到此文件中。详见文档：https://developers.weixin.qq.com/miniprogram/dev/devtools/projectconfig.html",
-  "projectname": "%E6%B8%AF%E4%B8%AD%E5%AE%B6%E6%A0%A1%E4%BA%A4%E6%B5%81%E5%B9%B3%E5%8F%B02",
+  "description": "项目私有配置文件",
+  "projectname": "校园互动小程序",
   "setting": {
     "compileHotReLoad": true
+  },
+  "condition": {
+    "miniprogram": {
+      "list": [
+        {
+          "name": "首页",
+          "pathName": "pages/index/index",
+          "query": ""
+        },
+        {
+          "name": "论坛",
+          "pathName": "pages/forum/forum",
+          "query": ""
+        },
+        {
+          "name": "班级",
+          "pathName": "pages/class/class",
+          "query": ""
+        },
+        {
+          "name": "通知",
+          "pathName": "pages/notice/notice",
+          "query": ""
+        },
+        {
+          "name": "我的",
+          "pathName": "pages/profile/profile",
+          "query": ""
+        }
+      ]
+    }
   }
 }
