@@ -23,7 +23,7 @@
 
   <view class="form">
     <input class="input-item" 
-           placeholder="请输入用户名" 
+           placeholder="请输入用户名/学号/职工号/手机号" 
            value="{{username}}"
            bindinput="onUsernameInput"/>
     <input class="input-item" 
